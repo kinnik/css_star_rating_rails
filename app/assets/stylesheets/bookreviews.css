@@ -1,3 +1,8 @@
+.fa-star, .fa-star-o, .fa-star-half-o {
+  color: gold;
+}
+
+
 .rating {
     float:left;
 }
