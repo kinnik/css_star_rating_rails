@@ -15,5 +15,24 @@
   <%= @book.isbn %>
 </p>
 
+<%= link_to 'Write a Review', new_bookreview_path(book_id: @book) %> |
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
+
+
+<hr />
+
+<p>
+    <strong> Book Reviews </strong>
+</p>
+
+<% @book.bookreviews.each do |review| %>
+    <%= review.summary %><br />
+    <p>
+    <%= review.details %>
+    </p>
+
+    <%= link_to 'Edit', edit_bookreview_path(review) %>
+    <%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <hr />
+<% end %>
