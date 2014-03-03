@@ -1,4 +1,6 @@
 CssStarRatingRails::Application.routes.draw do
+  resources :bookreviews
+
   resources :books
 
   # The priority is based upon order of creation: first created -> highest priority.
