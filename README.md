@@ -3,6 +3,8 @@ css_star_rating_rails
 
 A Tutorial on Integrating Star Rating in CSS To A Rails Application
 
+Blog post: http://swifthorseman.com/2015/05/12/star-ratings-in-rails-using-css/
+
 ### Installation
 
 ```sh
